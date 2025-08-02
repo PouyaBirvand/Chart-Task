@@ -4,12 +4,9 @@ import Chart from "./Chart";
 
 const ChartContainer = () => {
   return (
-    <div className="flex md:flex-row flex-col items-center justify-center gap-8 min-h-[100vh]">
+    <div className="chart-grid">
       {data.map((chart, index) => (
-        <div key={index}>
-          <h3>{chart.title}</h3>
-          <Chart data={chart.data} />
-        </div>
+        <Chart key={index} title={chart.title} data={chart.data} />
       ))}
     </div>
   );
