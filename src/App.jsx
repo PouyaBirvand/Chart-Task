@@ -1,5 +1,5 @@
 import React from "react";
-import ChartContainer from "./components/ChartContainer";
+import ChartContainer from "./components/charts/ChartContainer";
 
 const App = () => {
   return (
